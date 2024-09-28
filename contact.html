@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <style>
+        .contact-section {
+    background-color: #e1f6d7;
+    padding: 3rem 0;
+    color: #333;
+}
+
+.contact-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2b7a2b;
+    margin-bottom: 1.5rem;
+}
+
+.contact-description {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    font-size: 1.2rem;
+}
+
+.contact-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-info, .contact-form {
+    flex: 1;
+    margin: 1rem;
+}
+
+.contact-info h3, .contact-form h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #2b7a2b;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.social-links li {
+    margin-bottom: 0.5rem;
+}
+
+.social-links a {
+    color: #2b7a2b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.contact-form button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.contact-form button:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        flex-direction: column;
+    }
+
+    .contact-info, .contact-form {
+        margin: 0 0 2rem;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p class="contact-description">We'd love to hear from you! Whether you have a question about our products, need assistance, or just want to share feedback, feel free to reach out. We're here to help.</p>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><strong>Email:</strong> support@greenedge.com</p>
+                    <p><strong>Phone:</strong> +123-456-7890</p>
+                    <p><strong>Address:</strong> 123 Green Street, EcoCity, Country</p>
+                    <p>Follow us on our social media for updates and more:</p>
+                    <ul class="social-links">
+                        <li><a href="https://www.facebook.com/greenedge" target="_blank">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/greenedge" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.twitter.com/greenedge" target="_blank">Twitter</a></li>
+                    </ul>
+                </div>
+    
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form action="submit.php" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+    
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+    
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+    
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
